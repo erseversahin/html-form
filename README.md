@@ -1,2 +1,2 @@
 ### HTML FORM
-PhpBasic eğitiminde form işlemleri bölümünde kullanılan örnek form tasarımı.
+PhpBasic eğitimi; form işlemleri bölümünde kullanılan örnek form tasarımı.
