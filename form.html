@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Post</title>
+    <style>
+        .content{
+            position: relative;
+        }
+        .message{
+            display: block;
+            font-weight: 600;
+            padding: 20px;
+        }
+        .success{
+            background: green;
+            color: white;
+        }
+        .fail{
+            background: darkred;
+            color: #f5f5f9;
+        }
+        fieldset{
+            background: #f5f5f9;
+            margin-bottom: 15px;
+        }
+        input {
+            background: #f5f5f9;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            outline: 0;
+            border: 0;
+            height: 40px;
+            font-size: 20px;
+        }
+        button{
+            width: 250px;
+            height: 40px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            background: darkcyan;
+            color: white;
+            border: 0;
+            cursor: pointer;
+
+        }
+        button:hover{
+            background: #005b5b;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <span class="message success">Tebrikler! İşlem tamamlandı.</span>
+        <span class="message fail">İşlem başarızı, yeniden deneyiniz.</span>
+        <h1>Kayıt Formu</h1>
+        <form action="post.php?islem=uyelik" method="post">
+            <fieldset>
+                <input type="text" placeholder="İsim Soyisim" name="isim">
+            </fieldset>
+
+            <fieldset>
+                <input type="text" placeholder="Telefon Numarası" name="telefon">
+            </fieldset>
+
+            <fieldset>
+                <input type="text" placeholder="E-Posta" name="eposta">
+            </fieldset>
+
+            <fieldset>
+                <input type="text" placeholder="Şifre" name="sifre">
+            </fieldset>
+
+            <button type="submit">Kayıt Ol</button>
+
+        </form>
+    </div>
+</body>
+</html>
